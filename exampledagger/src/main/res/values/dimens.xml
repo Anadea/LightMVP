@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+</resources>

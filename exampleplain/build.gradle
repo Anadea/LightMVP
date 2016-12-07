@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+        applicationId "com.anadeainc.exampleplain"
+
+        minSdkVersion 16
+        targetSdkVersion 25
+
+        versionCode 1
+        versionName "1.0"
+
+        resConfigs "en"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            testCoverageEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+        return void
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Android
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile project(path: ':lightmvp')
+
+    // Tests dependencies
+    testCompile 'junit:junit:4.12'
+}

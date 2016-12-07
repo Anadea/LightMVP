@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anadeainc.exampledagger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.anadeainc.exampledagger.ExampleApp"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.anadeainc.exampledagger.features.login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.anadeainc.exampledagger.features.main.MainActivity"
+            android:theme="@style/MainScreen">
+
+        </activity>
+
+    </application>
+
+</manifest>

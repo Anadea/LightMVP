@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ExampleApp</string>
+    <string name="dummy" />
+
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="activity_attached">Activity was attached # </string>
+    <string name="start_second_activity">Start second activity</string>
+
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_import">Import</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+
+    <string name="fragment_name_prefix">Fragment name:&#160;</string>
+    <string name="tab_title_prefix">Tab title:&#160;</string>
+    <string name="page_num_prefix">Page number:&#160;</string>
+    <string name="fragment_attached_prefix">Fragment MVP view attached&#160;</string>
+    <string name="attached_suffix">&#160;times</string>
+
+</resources>
