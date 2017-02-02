@@ -1,5 +1,7 @@
 package com.anadeainc.lightmvp.mvpview;
 
+import android.support.annotation.NonNull;
+
 import com.anadeainc.lightmvp.contract.IPresenter;
 import com.anadeainc.lightmvp.contract.IView;
 
@@ -9,16 +11,16 @@ public abstract class MvpView<T extends IMvpParent, V extends IView, P extends I
     private P presenter;
     private T parent;
 
-    public MvpView(P presenter) {
+    public MvpView(@NonNull P presenter) {
         this.presenter = presenter;
     }
 
-    public void onCreate(T parent) {
+    public void onCreate(@NonNull T parent) {
         this.parent = parent;
     }
 
+    @SuppressWarnings("unchecked")
     protected void onStart() {
-        //noinspection unchecked
         presenter.attachView((V) this);
     }
 

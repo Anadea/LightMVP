@@ -30,7 +30,7 @@ public abstract class SimpleActivity<V extends IView, P extends IPresenter<V>> e
 
     @Override
     protected void notifyComponentOnDestroy(boolean isChangingConfigurations) {
-        if (!isChangingConfigurations() && presenter != null)
+        if (!isChangingConfigurations && presenter != null)
             presenter.destroy();
         presenter = null;
     }

@@ -5,7 +5,7 @@ import com.anadeainc.lightmvp.contract.IView;
 
 import io.reactivex.disposables.CompositeDisposable;
 
-public class BaseRxPresenter<V extends IView> extends Presenter<V> {
+public abstract class BaseRxPresenter<V extends IView> extends Presenter<V> {
 
     protected CompositeDisposable composite = new CompositeDisposable();
 
