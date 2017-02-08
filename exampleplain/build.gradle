@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.1'
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         applicationId "com.anadeainc.exampleplain"
@@ -50,8 +50,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Android
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
     compile project(path: ':lightmvp')
 
     // Tests dependencies
